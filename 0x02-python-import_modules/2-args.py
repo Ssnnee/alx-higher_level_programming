@@ -9,8 +9,10 @@ def arg_printer(argv):
             print("{:d} argument:".format(num_args))
         else:
             print("{:d} arguments:".format(num_args))
-        for i in range(1, num_args + 1):
+        i = 1
+        while i < num_args:
             print("{:d}: {:s}".format(i, argv[i]))
+            i += 1
 
 
 if __name__ == "__main__":
