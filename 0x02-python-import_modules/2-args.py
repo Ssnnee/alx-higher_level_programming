@@ -16,5 +16,4 @@ def arg_printer(argv):
 
 if __name__ == "__main__":
     import sys
-
     arg_printer(sys.argv)
