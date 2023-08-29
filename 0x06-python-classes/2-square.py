@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 
-
 """
 This module defines a Square class.
 """
@@ -41,7 +40,7 @@ class Square:
         Args:
             value: The size value to be set.
         """
-       if type(value) is not int:
+        if type(value) is not int:
             raise TypeError("size must be an integer")
         if value < 0:
             raise ValueError("size must be >= 0")
