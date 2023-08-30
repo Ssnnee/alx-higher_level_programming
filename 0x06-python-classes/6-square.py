@@ -65,7 +65,8 @@ class Square:
         Args:
             value: The position value to be set.
         """
-        if all(i > 0 for i in value) and  len(value) == 2:
+        if(len(value) == 2 or
+                all(i > 0 for i in value)):
             self.__position = value
         raise TypeError("position must be a tuple of 2 positive integers")
 
