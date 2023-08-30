@@ -64,4 +64,3 @@ class Square:
         matrix = [["#" for _ in range(cols)] for _ in range(rows)]
         for row in matrix:
             print("".join(row))
-
