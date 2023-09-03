@@ -8,16 +8,16 @@ The repository includes several projects that illustrate high-level programming 
 Each project is contained in its own directory, with a descriptive name indicating the concepts covered by the programs therein. The Python programs are written to conform to the pyco  Style Guide and stay true to the Zen of Python.
 
 The directory structure is as follows:
-.
-├── 0x00-python-hello_world
-├── 0x01-python-if_else_loops_functions
-├── 0x02-python-import_modules
-├── 0x03-python-data_structures
-├── 0x04-python-more_data_structures
-├── 0x05-python-exceptions
-├── 0x06-python-classes
-├── 0x07-python-test_driven_development
-└── README.md
++ .
++ ├── 0x00-python-hello_world
++ ├── 0x01-python-if_else_loops_functions
++ ├── 0x02-python-import_modules
++ ├── 0x03-python-data_structures
++ ├── 0x04-python-more_data_structures
++ ├── 0x05-python-exceptions
++ ├── 0x06-python-classes
++ ├── 0x07-python-test_driven_development
++ └── README.md
 
 Each directory contains Python scripts related to the project, along with a README file that gives more information about the project.
 
