@@ -1,0 +1,62 @@
+This func that adds 2 integers.
+
+This import add_integer
+>>> add_integer = __import__('0-add_integer').add_integer
+
+Adds normals numbers
+>>> add_integer(5, 8)
+13
+>>> add_integer(0.50000, -0.5)
+0
+>>> add_integer(8, -2.5)
+6
+>>> add_integer(1.5, -4)
+-3
+
+# Adds negative numbers
+>>> add_integer(-5, -8)
+-13
+>>> add_integer(-1.5, -2.5)
+-3
+
+Adds very large numbers
+>>> add_integer(1000000000000000, 2000000000000000)
+3000000000000000
+
+Adds zero
+>>> add_integer(0, 0)
+0
+>>> add_integer(0, 5)
+5
+>>> add_integer(5, 0)
+5
+
+Adds with b Value
+>>> add_integer(2)
+100
+
+Adds a string with integer
+
+>>> add_integer('1', 2)
+Traceback (most recent call last):
+...
+TypeError: a must be an integer or b must be an integer
+>>> add_integer(1, '2')
+Traceback (most recent call last):
+...
+TypeError: a must be an integer or b must be an integer
+
+Adds lists
+
+>>> add_integer([1, 2], [5,7])
+Traceback (most recent call last):
+...
+TypeError: a must be an integer or b must be an integer
+
+Adds infinity
+
+>>> add_integer(float('inf'), 10000000000000000000000000000)
+Traceback (most recent call last):
+...
+OverflowError: cannot convert float infinity to integer
+

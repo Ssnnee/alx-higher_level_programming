@@ -1,0 +1,20 @@
+This function prints My name is <first name> <last name>
+    
+    >>> say_my_name = __import__('3-say_my_name').say_my_name
+
+    Prints names correctly
+    >>> say_my_name('Denis', 'Joe')
+    My name is Denis Joe
+    >>> say_my_name('Denis')
+    My name is Denis 
+
+    Raises errors for invalid inputs
+    >>> say_my_name(123, 'Denis')
+    Traceback (most recent call last):
+    ...
+    TypeError: first_name must be a string
+    >>> say_my_name('Denis', 123)
+    Traceback (most recent call last):
+    ...
+    TypeError: last_name must be a string
+    
