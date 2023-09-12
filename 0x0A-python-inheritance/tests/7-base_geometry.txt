@@ -5,7 +5,7 @@ BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
 >>> bg = BaseGeometry()
->>> type(bg) is BaseGeometry
+>>> isinstance(bg, BaseGeometry)
 True
 
 Test integer_validator with valid inp
