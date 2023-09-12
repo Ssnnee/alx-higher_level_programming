@@ -1,6 +1,8 @@
-This function returns the list of available
-    attributes and methods of an object.
+The ``1-my_list.py`` module
+==============================
 
+Using ``MyList``
+----------------------
 
 >>> MyList = __import__('1-my_list').MyList
 
