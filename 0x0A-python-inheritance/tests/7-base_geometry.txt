@@ -83,13 +83,15 @@ Test with list
 ...
 True
 
-Test with dict
->>> try:
-...     bg.integer_validator("age",dict(Sne=3))
-... except TypeError as e:
-...     str(e) == "age must be an integer"
-...
-True
+Test wrong parameter
+>>> bg.integer_validator() 
+Traceback (most recent call last):
+  ...
+TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+>>> bg.integer_validator(1) 
+Traceback (most recent call last):
+  ...
+TypeError: integer_validator() missing 1 required positional argument: 'value'
 
 Test area method
 >>> try:
