@@ -37,3 +37,10 @@ List with zero
 >>> my_list = MyList([0, 3, 2, -167, 1])
 >>> my_list.print_sorted()
 [-167, 0, 1, 2, 3]
+
+The return
+>>> my_list = MyList()
+>>> m = my_list.print_sorted()
+[]
+>>> print(m)
+None
