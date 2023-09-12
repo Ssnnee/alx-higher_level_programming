@@ -59,9 +59,9 @@ Test with None
 ...
 True
 
-Test with None
+Test with True
 >>> try:
-...     bg.integer_validator("age", None)
+...     bg.integer_validator("age",True)
 ... except TypeError as e:
 ...     str(e) == "age must be an integer"
 ...
