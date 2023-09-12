@@ -83,6 +83,14 @@ Test with list
 ...
 True
 
+Test with dict
+>>> try:
+...     bg.integer_validator("age",dict(Sne=3))
+... except TypeError as e:
+...     str(e) == "age must be an integer"
+...
+True
+
 Test area method
 >>> try:
 ...     bg.area()
