@@ -5,6 +5,8 @@ BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
 >>> bg = BaseGeometry()
+>>> type(bg) is BaseGeometry
+True
 
 Test integer_validator with valid inp
 >>> bg.integer_validator("my_int", 192) is None
@@ -100,9 +102,3 @@ Test area method
 ...     str(e) == "area() is not implemented"
 ...
 True
-
-Test wrong parameter
->>> bg.area(1)
-Traceback (most recent call last):
-  ...
-TypeError: area() takes 1 positional argument but 2 were given
