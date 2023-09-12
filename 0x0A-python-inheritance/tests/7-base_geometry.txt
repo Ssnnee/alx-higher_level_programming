@@ -100,3 +100,9 @@ Test area method
 ...     str(e) == "area() is not implemented"
 ...
 True
+
+Test wrong parameter
+>>> bg.area(1)
+Traceback (most recent call last):
+  ...
+TypeError: area() takes 1 positional argument but 2 were given
