@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 
 """This module contains a useful function for understanding inheritance"""
-
 Rectangle = __import__('9-rectangle').Rectangle
 
 
