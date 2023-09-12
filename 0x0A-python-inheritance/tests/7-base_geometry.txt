@@ -67,6 +67,22 @@ Test with True
 ...
 True
 
+Test with tuple
+>>> try:
+...     bg.integer_validator("age", tuple([1]))
+... except TypeError as e:
+...     str(e) == "age must be an integer"
+...
+True
+
+Test with list
+>>> try:
+...     bg.integer_validator("age", list([1]))
+... except TypeError as e:
+...     str(e) == "age must be an integer"
+...
+True
+
 Test area method
 >>> try:
 ...     bg.area()
