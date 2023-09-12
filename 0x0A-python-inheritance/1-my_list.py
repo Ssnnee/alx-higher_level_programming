@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""This module contains a useful function for understanding inheritance"""
 
 
 class MyList(list):

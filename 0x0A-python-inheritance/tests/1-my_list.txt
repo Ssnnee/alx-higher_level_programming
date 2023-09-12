@@ -1,8 +1,4 @@
-The ``1-my_list.py`` module
-==============================
-
-Using ``MyList``
-----------------------
+This class is a child of list class
 
 >>> MyList = __import__('1-my_list').MyList
 
@@ -18,7 +14,6 @@ Using ``MyList``
     [1, 2, 3, 4, 5]
 
 Empty list
-
 >>> my_list = MyList()
 >>> my_list.print_sorted()
 []
