@@ -2,7 +2,7 @@
 """This module contains a useful function for understanding inheritance"""
 
 
-def add_attributes(obj, attribute_to_add, value):
+def add_attribute(obj, attribute_to_add, value):
     """This function adds a new attribute to an object if it's possible.
     """
 
