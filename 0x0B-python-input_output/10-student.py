@@ -22,7 +22,7 @@ class Student:
         """This method retrieves a dictionary representation of
         a Student instance"""
 
-        if isinstance(attrs, list) and all(isinstance(attr, str) for attr in attrs):
+        if type(attrs) is list and all(type(attr) is str for attr in attrs):
             my_dic = {attr: getattr(self, attr, None) for attr in attrs}
             new = {}
 
