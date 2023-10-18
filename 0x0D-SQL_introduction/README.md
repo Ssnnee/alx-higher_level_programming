@@ -10,7 +10,7 @@ A Databse is a systematic collection of data.
 ### What is SQL ?
 SQL stands for Structured Query Langguage. It's a way we use to query a database.
 
-Exemple :
+Example :
 ```sql
 -- Lists all databases of your MySQL server.
 SHOW DATABASES;
