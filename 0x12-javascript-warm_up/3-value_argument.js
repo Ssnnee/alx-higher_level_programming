@@ -3,7 +3,8 @@
 const args = process.argv;
 const firstArg = args[2];
 
-if (isNaN(firstArg)) {
-    console.log('Not argument');
+if (firstArg === undefined) {
+  console.log('Not argument');
+} else {
+  console.log(firstArg);
 }
-console.log(firstArg);
