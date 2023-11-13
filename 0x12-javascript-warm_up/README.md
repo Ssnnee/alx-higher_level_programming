@@ -32,9 +32,6 @@ command:
 ./script_name.js
 ```
 
-## Files
-./0-javascript_is_amazing.js a script that prints "JavaScript is amazing"
-
 ### Note
 The `#!/usr/bin/node` in the first line of all files is called shebang or
 hashbang. It is used in Unix-like operating systems (such as Linux) to
