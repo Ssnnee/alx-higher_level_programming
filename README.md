@@ -24,6 +24,7 @@ The directory structure is as follows:
 + ├── 0x0C-python-almost_a_circle
 + ├── 0x0D-SQL_introduction
 + ├── 0x0E-SQL_more_queries
++ ├── 0x12-javascript-warm_up
 + └── README.md
 
 Each directory contains Python scripts related to the project, along with a README file that gives more information about the project.
@@ -41,7 +42,7 @@ To execute a script, navigate to the directory containing the script and run the
 python3 script_name.py
 ```
 
-## Note 
+## Note
 The  "#!/usr/bin/python3" in first line of all files is called shebang or hashbang.
 It is used in Unix-like operating systems (such as Linux) to indicate the interpreter that should be used to execute the script.
 In my files, it  specifies that the Python 3 interpreter located at /usr/bin/python3 should be used to execute the script. This way, when the script is run from the command line, the operating system knows which interpreter to use without needing to explicitly specify it.
