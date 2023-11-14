@@ -2,8 +2,8 @@
 
 const args = process.argv.slice(2);
 const firstArg = args[2];
-const sortedArgs = args.sort();
-const argsLength = args.length;
+const sortedArgs = [...new Set(args)].sort();
+const argsLength = sortedArgs.length;
 
 function checkNumbers (arr) {
   const positiveNumbers = arr.filter(num => num > 0);
