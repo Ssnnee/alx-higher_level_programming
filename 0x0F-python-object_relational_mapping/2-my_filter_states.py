@@ -12,7 +12,6 @@ if __name__ == "__main__":
         )
     cursor = db.cursor()
     query = "SELECT * FROM states WHERE name='{0}' ORDER BY id ASC".format(sys.argv[4])
-    print(query)
     cursor.execute(query)
     for states in cursor.fetchall():
         print(states)
