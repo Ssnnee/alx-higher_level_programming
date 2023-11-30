@@ -5,12 +5,14 @@ import MySQLdb
 import sys
 
 if __name__ == "__main__":
-    """ Print all states of database """
+    """ Print all states with N"""
     db = MySQLdb.connect(
             host="localhost", passwd=sys.argv[2],
             user=sys.argv[1], db=sys.argv[3], port=3306
         )
     cursor = db.cursor()
-    cursor.execute("SELECT * FROM states ORDER BY id ASC")
+    cursor.execute(
+            "SELECT * FROM states WHERE name LIKE 'N%'  ORDER BY id ASC"
+            )
     for states in cursor.fetchall():
         print(states)
