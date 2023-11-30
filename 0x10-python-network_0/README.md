@@ -1,6 +1,12 @@
-#0x10. Python - Network #0
+# 0x10. Python - Network #0
 
 In this project we write somme useful scripts to understand HTTP request
 
 ## Usage
-To use a script normally
+To use a script normally you have to run it like normal script with the right
+parameter
+
+```
+./script_name parameters
+```
+
