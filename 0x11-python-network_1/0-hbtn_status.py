@@ -13,4 +13,4 @@ with urllib.request.urlopen(req) as response:
     print("Body response:")
     print("\t- type: {}".format(res.__class__))
     print("\t- content: {}".format(res))
-    print("\t- utf8 content: {}".format(res.decode('utf-8')))
+    print("\t- utf8 content: {}".format(res.decode('ascii')))
