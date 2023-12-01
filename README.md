@@ -27,6 +27,7 @@ The directory structure is as follows:
 + ├── 0x12-javascript-warm_up
 + ├── 0x0F-python-object_relational_mapping
 + ├── 0x10-python-network_0
++ ├── 0x11-python-network_1
 + └── README.md
 
 Each directory contains Python scripts related to the project, along with a README file that gives more information about the project.
