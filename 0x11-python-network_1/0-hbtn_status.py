@@ -3,7 +3,14 @@
 import urllib.request
 
 
-with urllib.request.urlopen('https://intranet.hbtn.io/status') as response:
-    res = response.read().decode('utf-8')
+header = {'User-Agent': 'Mozilla/5.0'}
+req = urllib.request.Request(
+        'https://intranet.hbtn.io/status', headers=header
+)
 
-print(f"Body response:\n\t- type: {type(res)}\n\t- content: {res}\n\t- utf8 content: {res.decode('utf-8')}")
+with urllib.request.urlopen(req) as response:
+    res = response.read()
+    print("Body response:")
+    print("\t- type: {}".format(res.__class__))
+    print("\t- content: {}".format(res))
+    print("\t- utf8 content: {}".format(res.decode('utf-8')))
