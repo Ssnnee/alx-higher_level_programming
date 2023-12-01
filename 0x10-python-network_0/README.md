@@ -1,6 +1,7 @@
 # 0x10. Python - Network #0
 
-In this project we write somme useful scripts to understand HTTP request
+In this project we write somme useful scripts to understand HTTP request and
+how to use curl to write request.
 
 *Topics:*  Bash Python Scripting Back-end API
 
