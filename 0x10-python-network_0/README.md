@@ -2,6 +2,9 @@
 
 In this project we write somme useful scripts to understand HTTP request
 
+*Topics:*  Bash Python Scripting Back-end API
+
+
 ## Usage
 To use a script normally you have to run it like normal script with the right
 parameter
