@@ -1,17 +1,18 @@
-function translateHollo () {
-  languageCode = $('INPUT#languageCode').val();
-  $.get(`https://hellosalut.stefanbohacek.dev/?lang=${languageCode}`, function (data) {
+function translateHello () {
+  // languageCode = $('INPUT#language_code').val();
+  $.get(`https://hellosalut.stefanbohacek.dev/?lang=${$('INPUT#language_code').val()}`, function (data) {
     $('DIV#hello').text(data.hello);
   });
 }
 
 $(function () {
   $('INPUT#btn_translate').click(function () {
-    translateHollo();
+    translateHello();
   });
-  $('INPUT#languageCode').keypress(function (e) {
+
+  $('INPUT#language_code').keypress(function (e) {
     if (e.which === 13) {
-      translateHollo();
+      translateHello();
     }
   });
 });
